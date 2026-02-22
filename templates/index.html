@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Himanshu Kumbhaj | Portfolio</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Google Font -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='style.css' ) }}">
+">
+</head>
+<body>
+
+    <div class="top-text">PORTFOLIO</div>
+
+    <div class="container">
+
+        <div class="right-buttons">
+            <a href="https://github.com/hackwithhimanshu?tab=repositories">View Security Projects</a>
+            <!-- <a href="static/VAPT_Himanshu_Kumbhaj_Resume.pdf">Download Resume</a> -->
+            <a href="{{ url_for('static', filename='VAPT_Himanshu_Kumbhaj_Resume.pdf') }}">Downlaod Resume</a>
+        </div>
+
+        <div class="name">Himanshu Kumbhaj</div>
+
+        <div class="tagline">
+            Vulnerability Assessment & Penetration Tester <br>
+            Web Application Security Specialist
+        </div>
+
+        <div class="skills-card">
+            <ul>
+                <li>Web Application Security</li>
+                <li>Vulnerability Assessment & OWASP Testing</li>
+                <li>Network Reconnaissance & Attack Surface Analysis</li>
+                <li>Python-Based Security Automation & Tool Development</li>
+            </ul>
+        </div>
+
+        <div class="projects">Projects</div>
+
+        <div class="github">
+            <a href="https://github.com/hackwithhimanshu" target="_blank">
+                https://github.com/hackwithhimanshu
+            </a>
+        </div>
+        <section class="projects-section">
+
+    <div class="project-grid">
+
+        <div class="project-card">
+            <h3>ARP Spoofing & Detection Tool</h3>
+            <p class="desc">
+                Simulates ARP spoofing attacks in controlled lab environments and detects malicious ARP activity through real-time packet inspection.
+            </p>
+            <p><strong>Tools Used:</strong><br> Python, Scapy, Networking (ARP Protocol)</p>
+            <a href="https://github.com/hackwithhimanshu/Arp-Spoofing" target="_blank">GitHub Link</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Network Scanner</h3>
+            <p class="desc">
+                Performs host discovery and port scanning to identify active devices and exposed services within a target network range.
+            </p>
+            <p><strong>Tools Used:</strong><br> Python, Socket Programming, TCP/IP</p>
+            <a href="https://github.com/hackwithhimanshu/network_scanner" target="_blank">GitHub Link</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Subdomain Enumeration Tool</h3>
+            <p class="desc">
+                Automates subdomain discovery using wordlists-based brute forcing and HTTP response validation to map an organization’s attack surface.
+            </p>
+            <p><strong>Tools Used:</strong><br> Python, Requests, Wordlist Processing</p>
+            <a href="https://github.com/hackwithhimanshu/subdomain_crawler" target="_blank">GitHub Link</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Packet Sniffer</h3>
+            <p class="desc">
+                Captures and analyzes network packets to monitor traffic patterns and identify suspicious communication behavior.
+            </p>
+            <p><strong>Tools Used:</strong><br> Python, Scapy, Network Protocol Analysis</p>
+            <a href="https://github.com/hackwithhimanshu/packet_sniffer" target="_blank">GitHub Link</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Vulnerability Scanner</h3>
+            <p class="desc">
+                Scans web applications for common security misconfigurations and known vulnerability patterns to enhance protection.
+            </p>
+            <p><strong>Tools Used:</strong><br> Python, Requests, Basic Security Checks</p>
+            <a href="https://github.com/hackwithhimanshu/vulnerability_scanner" target="_blank">GitHub Link</a>
+        </div>
+
+        <div class="project-card">
+            <h3>Web Crawler & Link Extractor</h3>
+            <p class="desc">
+                Crawls web applications to extract internal links and map site structure, assisting reconnaissance and attack surface discovery.
+            </p>
+            <p><strong>Tools Used:</strong><br> Python, BeautifulSoup, Regex</p>
+            <a href="https://github.com/hackwithhimanshu/Web-Crawler-Link-Extractor" target="_blank">GitHub Link</a>
+        </div>
+
+    </div>
+</section>
+
+<section class="contact-section">
+
+    <h2 class="contact-title">Contact</h2>
+
+    <div class="contact-container">
+
+        <div class="contact-left">
+            <p>📞 +91 8871571003</p>
+            <p>💬 <a href="https://wa.me/918871571003" target="_blank">https://wa.me/918871571003</a></p>
+            <p>✉️ <a href="mailto:himanshukumbhaj0@gmail.com">himanshukumbhaj0@gmail.com</a></p>
+            <p>🔗 <a href="https://www.linkedin.com/in/himanshu-kumbhaj-41b274295/" target="_blank">
+                LinkedIn Profile
+            </a></p>
+            <p>💻 <a href="https://github.com/hackwithhimanshu" target="_blank">
+                GitHub Profile
+            </a></p>
+        </div>
+
+        <div class="contact-right">
+            <img src="{{ url_for('static', filename='brain.png') }}" alt="Cyber Brain">
+        </div>
+
+    </div>
+
+</section>
+
+    </div>
+
+</body>
+</html>
